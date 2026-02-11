@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finano Consulting</title>
+    <!--<link rel="stylesheet" href="index1.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+/* Font Setup */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+.container {
+    width: 90%;
+    margin: auto;
+}
+/* Navbar */
+.navbar {
+    background: #3b58a4;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+nav ul li a:hover {
+    color: #1e63e9;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url("https://static.vecteezy.com/system/resources/previews/011/004/883/non_2x/triangular-abstract-with-security-symbol-circuit-board-modern-future-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 40, 120, 0.75);
+}
+
+.hero-content {
+    position: relative;
+    color: #fff;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 em {
+    font-style: italic;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.btn {
+    background: #7bd500;
+    color: #fff;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #68b800;
+}
+
+
+/*service*/
+.services-section {
+    padding: 80px 0;
+}
+
+.services-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Card */
+.service-card {
+    background: #fff;
+    width: 320px;
+    padding: 80px 30px 40px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 120px;
+    height: 120px;
+    background: #7bd500;
+    border-radius: 50%;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i {
+    font-size: 40px;
+    color: #fff;
+}
+
+/* Text */
+.service-card h3 {
+    font-size: 22px;
+    color: #0b1c64;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #2b2b7c;
+}
+
+/* Hover effect (optional) */
+.service-card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+/*aboutus*/
+body {
+    background: #fff;
+}
+
+/* Section */
+.info-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+/* Layout */
+.info-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Image */
+.info-image {
+    position: relative;
+    width: 45%;
+}
+
+.info-image img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+
+/* Content */
+.info-content {
+    width: 55%;
+}
+
+.info-content h2 {
+    font-size: 36px;
+    color: #0b1c64;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.info-content h2 span {
+    color: #3a49ff;
+}
+
+.info-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2b2b7c;
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .info-container {
+        flex-direction: column;
+    }
+
+    .info-image,
+    .info-content {
+        width: 100%;
+    }
+}
+
+/*planner*/
+body {
+    background: #f4f6fb;
+}
+
+/* Section */
+.planner-section {
+    padding: 100px 0;
+}
+
+/* Header */
+.planner-header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.planner-header .left {
+    width: 40%;
+}
+
+.planner-header h2 {
+    font-size: 42px;
+    color: #0b1c64;
+    line-height: 1.3;
+}
+
+.planner-header h2 span {
+    color: #3a49ff;
+    font-style: italic;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background: #0b1c64;
+    margin-top: 15px;
+}
+
+.planner-header .right {
+    width: 50%;
+}
+
+.planner-header p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2b2b7c;
+}
+
+.section-title{text-align:center;color:#3b58a4;font-size:32px;margin-bottom:20px;}
+    
+    .planner-grid, .insurance-grid{display:flex;flex-wrap:wrap;gap:40px;justify-content:center;}
+    
+    .planner-card, .insurance-card{background:#ffff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1);width:300px;overflow:hidden;text-align:center;padding:0;}
+    
+    .planner-card img{width:100%;height:200px;object-fit:cover;}
+    
+    .planner-card h3, .insurance-card h3{font-size:22px;color:#3b58a4;margin:15px 0 10px 0;}
+    .planner-card p, .insurance-card p{margin:0 15px 15px;color:#555;font-size:15px;}
+
+
+/* Button */
+.planner-btn {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.planner-btn a {
+    display: inline-block;
+    background: linear-gradient(#8ee000, #6ac300);
+    color: #fff;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.planner-btn a:hover {
+    background: linear-gradient(#6ac300, #8ee000);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .planner-header {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .planner-header .left,
+    .planner-header .right {
+        width: 100%;
+    }
+
+    .planner-cards {
+        flex-direction: column;
+    }
+}
+
+/*aboutus*/
+body {
+    background: #fff;
+}
+
+/* Section */
+.faq-section {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+/* Layout */
+.faq-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+/* Image */
+.faq-image {
+    position: relative;
+    width: 45%;
+}
+
+.faq-image img {
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+
+
+/* Content */
+.faq-content {
+    width: 55%;
+}
+
+.faq h2 {
+    font-size: 36px;
+    color: #0b1c64;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.faq-content h2 span {
+    color: #3a49ff;
+}
+
+.faq-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #2b2b7c;
+    margin-bottom: 20px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .faq-container {
+        flex-direction: column;
+    }
+
+    .faq-image,
+    .faq-content {
+        width: 100%;
+    }
+}
+
+/*footer*/
+ footer {
+    background: #3b58a4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-inner div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-inner h3, .footer-inner h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-inner p, .footer-inner li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-inner ul li {
+    margin-bottom: 10px;
+}
+
+.footer-inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-inner ul li a:hover {
+    color: #3b58a4 ;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background:#3b58a4;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-inner div {
+        margin-bottom: 25px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="https://images.jdmagicbox.com/v2/comp/mumbai/w3/022pxx22.xx22.170330120028.n6w3/catalogue/yash-finance-solutions-borivali-east-mumbai-home-loans-BZmFaPSb7u-250.jpg" alt="Finano Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="service1.html">Services</a></li>
+                <li><a href="cases.html">Our Cases</a></li>
+                <li><a href="contactus.html">Contact Us</a>
+                    
+           
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <h1>Your Direct Path to Smarter Finance</h1>
+        <p>
+            We source, verify, and fast-track your loans through 50+ banking partners for you	
+        </p>
+        <a href="#" class="btn">Check Eligibility</a>
+    </div>
+</section>
+
+</body>
+</html>
+
+<!--service-->
+<section class="services-section">
+    <div class="services-container">
+
+        <div class="service-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <h3>Professional Advice</h3>
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <h3>Fully Independent</h3>
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Transparent</h3>
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            </p>
+        </div>
+        <div class="service-card">
+            <div class="icon-circle">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <h3>Great Support</h3>
+            <p>
+               Consectetur adipiscing elit sed do eiusmod tempor incididunt.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!--aboutus-->
+<section class="info-section">
+    <div class="info-container">
+
+        <!-- Left Image -->
+        <div class="info-image">
+            <img src="https://static.toiimg.com/thumb/msid-123023895,imgsize-167473,width-400,resizemode-4/123023895.jpg" alt="Video Image">
+            
+        </div>
+
+        <!-- Right Content -->
+        <div class="info-content">
+            <h2>
+                Transform Your Financial Future Effortlessly
+            </h2>
+
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+            </p>
+
+            <ul class="criteria-list">
+                <li><span>✔</span> 20 Years of Experience</li>
+                <li><span>✔</span> 45 Team Members</li>
+                </ul>
+        </div>
+
+    </div>
+</section>
+
+
+<!--planner-->
+<section class="planner-section">
+    <div class="planner-header">
+        <div class="left">
+            <h2>
+                Explore What  We Offer
+            </h2>
+        </div>
+        <div class="right">
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore <br>
+                magna aliqua doloream aliqya eismod.</div>
+				</div>
+            </p>
+        </div>
+    </div>
+
+    <!-- Cards -->
+    <section class="container">
+   
+    <div class="planner-grid">
+        <div class="planner-card">
+            <img src="https://easyhomefinance.in/knowledge-hub/wp-content/uploads/2025/07/loan-buy-house-pressure-buy-house.jpg" alt="">
+            <h3>Home Loans</h3>
+            <p>Flexible duration and EMI planning for buying, constructing, or renovating your house.</p>
+        </div>
+        <div class="planner-card">
+            <img src="https://bfsi.eletsonline.com/wp-content/uploads/2023/01/Business-Loan.jpg" alt="">
+            <h3>Business Loans</h3>
+            <p>Capital support to grow your business, expand operations, or launch new products.</p>
+        </div>
+        <div class="planner-card">
+            <img src="https://www.rupeecircle.com/client-assets/images/loan-type/education-loan.jpg" alt="">
+            <h3>Education Loans</h3>
+            <p>Low EMI options to support higher education aspirations in India and abroad.</p>
+        </div>
+        </div>
+    <!-- Button -->
+    <div class="planner-btn">
+        <a href="#">More Services</a>
+    </div>
+
+</section>
+
+
+<!--faq-->
+<section class="faq-section">
+    <div class="faq-container">
+
+        <!-- Left Image -->
+        <div class="faq-image">
+            <img src="https://static.toiimg.com/thumb/msid-123023895,imgsize-167473,width-400,resizemode-4/123023895.jpg" alt="Video Image">
+            
+        </div>
+
+        <!-- Right Content -->
+        <div class="faq-content">
+            <h2>
+                Transform Your Financial Future Effortlessly
+            </h2>
+
+            <p>
+                Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.
+            </p>
+
+        </div>
+
+    </div>
+</section>
+<!-- Footer -->
+    <footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Yash Finance Solutions</h3>
+      <p>Your trusted partner for loans and financial growth.</p>
+      <p>📞 +91 88504 29320</p>
+      <p>📍 Malad West, Mumbai</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Our Cases</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Working Hours</h4>
+      <p>🕘10 AM – 6 PM</p>
+      <p>Monday – Saturday</p>
+      <p>✔ 24/7 Call Support</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Yash Finance Solutions. All Rights Reserved.
+  </div>
+</footer>
+
+    

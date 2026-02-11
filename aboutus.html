@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Us - Financial Experts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+    /* Fonts */
+    body {
+        font-family: 'Open Sans', Arial, sans-serif;
+        color:white;
+        margin: 0;
+        padding: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', Arial, sans-serif;
+    }
+
+/* Navbar */
+.navbar {
+    background: #3b58a4;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+nav ul li a:hover {
+    color: #1e63e9;
+}
+    /* HERO */
+.hero {
+    height: 100vh;
+    background: url("https://st2.depositphotos.com/3591429/5246/i/450/depositphotos_52467319-stock-photo-business-people-working-in-office.jpg") center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+     justify-content: center;
+        text-align: center;
+        position: relative;
+}
+    .hero-overlay {position:absolute; inset:0; background: rgba(0,0,0,0.5);}
+    .hero h1 {position: relative; color: #fff; font-size: 48px; z-index: 1;}
+    .hero p {position: relative; color: #fff; z-index: 1; margin-top: 10px;}
+
+    .container {max-width: 1150px; margin: auto; padding: 60px 20px;}
+/*aboutus*/
+.section{
+    width:90%;
+    max-width:1100px;
+    margin:60px auto;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:60px;
+    gap:40px;
+}
+
+.row img{
+    width:48%;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+}
+
+.content{
+    width:48%;
+}
+
+.content h2{
+    color:#3b58a4 ;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.content p{
+    line-height:1.6;
+    color:#555;
+}
+
+/* Reverse layout */
+.row.reverse{
+    flex-direction:row-reverse;
+}
+p {
+    font-size: 18px;
+}
+
+.bank-logo {
+    height: 100px;
+    width: auto;
+    vertical-align: middle;
+    margin: 0 8px;
+    gap:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .row{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .row.reverse{
+        flex-direction:column;
+    }
+
+    .row img,
+    .content{
+        width:100%;
+    }
+}
+/*partners*/
+.partners-section{
+    width:90%;
+    max-width:1200px;
+    margin:80px auto;
+}
+
+.partners-section h2{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:40px;
+    color:#3b58a4;
+}
+
+/* Filter Buttons */
+.filter-buttons{
+    margin-bottom:50px;
+}
+
+.filter-buttons button{
+    padding:10px 20px;
+    margin:8px;
+    border-radius:8px;
+    border:2px solid #2d6cdf;
+    background:white;
+    color:#2d6cdf;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover{
+    background:#2d6cdf;
+    color:white;
+}
+
+/* Logo Grid */
+.logo-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+    gap:30px;
+}
+
+/* Logo Card */
+.logo-card{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.logo-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.08);
+}
+
+.logo-card img{
+    max-width:120px;
+    max-height:50px;
+    object-fit:contain;
+}
+/* FEATURES */
+    .features {margin-top: 100px;}
+    .features h3 {font-size: 30px; color: #3b58a4; margin-bottom: 15px;text-align: center;} 
+    .features ul {margin-left: 20px; color: #555; font-family: 'Open Sans', Arial, sans-serif;}
+    .features ul li {margin-bottom: 10px;}
+
+    /* TESTIMONIALS */
+    .testimonials {background: #f8fafb; padding: 60px 20px; text-align: center;}
+    .testimonials h2 {font-size: 32px; color: #3b58a4; margin-bottom: 15px;}
+    .testimonial-card {
+        display: inline-block;
+        background: #fff;
+        border-radius: 12px;
+        padding: 20px;
+        width: 280px;
+        margin: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
+    .testimonial-card p {font-style: italic; color: #555;}
+    .testimonial-card strong {display: block; margin-top: 10px;color:  #3b58a4;}
+
+    /* BRANDS */
+    .brands {background: #f1f5f9; padding: 40px 20px;}
+    .brand-list {display: flex; justify-content: space-between; flex-wrap: wrap; gap: 30px; max-width: 1000px; margin: auto;}
+    .brand-list img {height: 50px; opacity: 0.7;}
+
+    /* FOOTER */
+    footer {background: #333; color: #fff; text-align: center; padding: 20px; font-size: 14px;}
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+    <div class="container nav-flex">
+        <div class="logo">
+            <img src="https://images.jdmagicbox.com/v2/comp/mumbai/w3/022pxx22.xx22.170330120028.n6w3/catalogue/yash-finance-solutions-borivali-east-mumbai-home-loans-BZmFaPSb7u-250.jpg" alt="Finano Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="service1.html">Services</a></li>
+                <li><a href="cases.html">Our Cases</a></li>
+                <li><a href="contactus.html">Contact Us</a>
+                    
+           
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div>
+        <h1>About Us</h1>
+    </div>
+</section>
+
+<!--aboutus-->
+<div class="section">
+
+    <!-- Row 1 -->
+    <div class="row">
+        <img src="https://t4.ftcdn.net/jpg/08/43/93/17/360_F_843931771_8V5JfLjIdZeVAL09wsEIQdkEMZqK9nTO.jpg" alt="">
+        <div class="content">
+            <h2>Our Story</h2>
+            <p>The Concept: We act as a professional bridge, blending modern technology with expert advisory to connect borrowers with the right financial solutions.</p>
+        <p>The Goal: Our mission is to make financial products accessible, transparent, and stress-free for everyone.</p>
+        </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row reverse">
+        <img src="https://iaam.se/img/Our%20Vision%20&%20Mission/Pic%201%20-%20640%20X%20426px%20Vision.jpg" alt="">
+        <div class="content">
+            <h2>Our Vision</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row">
+        <img src="https://thumbs.dreamstime.com/b/handwriting-text-writing-our-mission-concept-meaning-tasks-schedule-need-to-made-them-right-order-success-woman-wear-161510246.jpg" alt="">
+        <div class="content">
+            <h2>Our Mission</h2>
+            <p>Empowerment: To empower individuals, families, and entrepreneurs with trusted financial products and superior service.</p>
+        <p>Reliability: To demonstrate deep capability and reliability in the financial sector through thousands of processed applications.</p>
+        </div>
+    </div>
+
+</div>
+
+<!--partners-->
+<section class="partners-section">
+
+    <h2>Our Industrial Partners<br> associated with:</h2>
+
+    <div class="filter-buttons">
+        <button class="active">All</button>
+        <button>Nationalized Banks</button>
+        <button>Private Banks</button>
+        <button>NBFCs Banks</button>
+        <button>Housing-Fianance</button>
+        
+    </div>
+
+    <div class="logo-grid">
+
+        <!-- Replace src with your real logo images -->
+        <div class="logo-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp8mXBusladp4eop5YLbiGOpipboZcpsGylw&s" alt="icici bank"></div>
+        <div class="logo-card"><img src="https://prod-iifl-assets.storage.googleapis.com/2024/09/Axis-Bank-Ltd-768x432.jpg.webp" alt="axix bank"></div>
+        <div class="logo-card"><img src="https://www.equitybulls.com/equitybullsadmin/uploads/Kotak%20Mahindra%20Bank%20Limited%20Logo.jpg" alt="kotat bank"></div>
+        <div class="logo-card"><img src="https://assets.thehansindia.com/h-upload/2023/06/27/1361099-idfc-first-bank.jpg" alt="idfc"></div>
+        <div class="logo-card"><img src="https://media.licdn.com/dms/image/v2/D4D12AQESboIyp1y40A/article-cover_image-shrink_720_1280/B4DZXbgQhSHAAI-/0/1743144422537?e=2147483647&v=beta&t=FzXuXCEZzMWDUGXrITXAnR0Zj1p6FXlTwimZZ59EsKA" alt="IndusInd"></div>
+        <div class="logo-card"><img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Bajaj_Finance_Logo_2025.svg" alt="bajab fainance"></div>
+        <div class="logo-card"><img src="https://d1i7580riw15wg.cloudfront.net/gd-assets/tata_capital_logo-3d6dff7ae761fe1506076c1c4a55c046bb7ee158ab57233fca2f18c47468e458.webp" alt="tata capital"></div>
+        <div class="logo-card"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/75/Aditya_Birla_Group_Logo.svg/1280px-Aditya_Birla_Group_Logo.svg.png" alt="Aditya Birla"></div>
+        <div class="logo-card"><img src="https://bfsi.eletsonline.com/wp-content/uploads/2016/04/mahindra-finance.jpg" alt="Mahindra Finance"></div>
+        <div class="logo-card"><img src="https://img.theweek.in/content/dam/week/news/biz-tech/images/2022/6/28/lichfl.jpg.transform/schema-1x1/image.jpg" alt="LIC HFL"></div>
+        <div class="logo-card"><img src="https://blog.mikelegal.com/wp-content/uploads/2021/11/SBI-Logo-scaled.jpeg" alt="sbi"></div>
+        <div class="logo-card"><img src="https://bfsi.eletsonline.com/wp-content/uploads/2017/11/Bank-of-Baroda.jpg" alt="Bob"></div>
+        <div class="logo-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxLYq4-NgeaGu3jKyBIML7xhzYPLBwzADRrA&s" alt="canera bank"></div>
+        <div class="logo-card"><img src="https://play-lh.googleusercontent.com/maFYja3zqngO4ZRgmZDS1Dy0PH2TUqVVgOioqzDQZtoeXsQphtLrA7V1DtnqduwqGgE" alt="PNB "></div>
+        <div class="logo-card"><img src="https://content.jdmagicbox.com/v2/comp/delhi/17/011p66717/catalogue/union-bank-of-india-rajouri-garden-delhi-banks-1vu2xic-250.jpg" alt="union"></div>
+        
+
+        
+
+
+        </div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="container features">
+
+    <h3>What Makes Us Different</h3>
+    <ul>
+        <li>Institutional Strength: We leverage a vast network of 50+ partners, including top Nationalized Banks, Private Banks, and NBFCs, to find your best match.</li>
+        <li>Bank-Ready Documentation: We professionally structure your data to ensure it meets strict institutional standards for 2x faster approvals.</li>
+        <li>Deep Industry Experience: Beyond just loans, we bring decades of combined experience in property sales.</li>
+        <li>High-Volume Success: Our track record includes successfully facilitating thousands of applications with consistent commitment to client satisfaction.</li>
+    </ul>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <h2>Testimonia</h2>
+    <div class="testimonial-card">
+        <p>“Their financial advice transformed our business. Professional, responsive, and results-driven!”</p>
+        <strong>– Sarah M.</strong>
+    </div>
+    <div class="testimonial-card">
+        <p>“Excellent service and personalized planning. Highly recommend!”</p>
+        <strong>– James R.</strong>
+    </div>
+    <div class="testimonial-card">
+        <p>“Top-tier financial guidance that helped me secure my future.”</p>
+        <strong>– Linda K.</strong>
+    </div>
+</section>
+
+<style>
+/*footer*/
+ footer {
+    background: #3b58a4;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+    gap: 30px;
+}
+
+.footer-inner div {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-inner h3, .footer-inner h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-inner p, .footer-inner li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-inner ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-inner ul li {
+    margin-bottom: 10px;
+}
+
+.footer-inner ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-inner ul li a:hover {
+    color: #3b58a4 ;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    background:#3b58a4;
+    font-size: 13px;
+    border-top: 1px solid #333;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-inner div {
+        margin-bottom: 25px;
+    }
+}
+</style>
+
+
+<!-- Footer -->
+    <footer>
+  <div class="footer-inner">
+    <div>
+      <h3>Yash Finance Solutions</h3>
+      <p>Your trusted partner for loans and financial growth.</p>
+      <p>📞 +91 88504 29320</p>
+      <p>📍 Malad West, Mumbai</p>
+    </div>
+    <div>
+      <h4>Pages</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cases.html">Our Cases</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Support</h4>
+      <ul>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Disclaimer</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Working Hours</h4>
+      <p>🕘10 AM – 6 PM</p>
+      <p>Monday – Saturday</p>
+      <p>✔ 24/7 Call Support</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Yash Finance Solutions. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
